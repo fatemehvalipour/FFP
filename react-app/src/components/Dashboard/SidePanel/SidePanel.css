@@ -10,27 +10,16 @@
 	color: var(--side-panel-font-color);
 	background-color: var(--side-panel);
 	height: 100vh;
-
 	cursor: default;
 }
 
 .side-panel-buttons {
-	align-self: center;
-	height: 500px;
+	height: 100px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.side-panel {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	padding: 40px;
-	color: var(--side-panel-font-color);
-	background-color: var(--side-panel);
+	align-items: flex-start;
+	padding: 0 10px;
 }
 
 .edit-image-form {
@@ -151,15 +140,6 @@
 
 .username-balance-div h3 {
 	padding-bottom: 5px;
-}
-
-.side-panel-buttons {
-	height: 100px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 0 10px;
 }
 
 .side-panel-buttons button {
