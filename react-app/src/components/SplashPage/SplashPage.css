@@ -123,7 +123,7 @@ footer {
 	border-radius: 40px;
 	width: 200px;
 	height: 60px;
-	position: center;
+	/* position: center; */
 	text-align: center;
 	position: relative;
 	top: 45px;

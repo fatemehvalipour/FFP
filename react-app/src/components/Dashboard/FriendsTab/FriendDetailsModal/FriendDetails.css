@@ -21,6 +21,7 @@
 .friend-detail-record .record-date {
 	margin: auto ;
 	margin-right: 0px;
+    padding-left: 0;
 }
 
 .friend-detail-record .transaction-record-detail-container {
@@ -30,7 +31,7 @@
 
 .friend-detail-record .transaction-record-detail-container .record-image-text{
     min-width: 650px;
-    margin: 0 0;
+    margin: 0;
     padding: 0;
     border-bottom: none;
 	height: 100px;
@@ -45,10 +46,6 @@
 .friend-transactions-container {
     max-height: 500px;
     overflow-y: scroll;
-}
-
-.friend-detail-record .record-date {
-	padding-left: 0;
 }
 
 .friend-detail-record .record-text {
