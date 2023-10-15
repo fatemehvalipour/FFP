@@ -43,7 +43,7 @@ const FriendDetails = ({ showModal, friendId, username, balance, image }) => {
 							{ formatToRial(balance) }
 						</p>
 					) : (
-						<p>All settled up!</p>
+						<p>تسویه شده</p>
 					)}
 				</div>
 			</div>

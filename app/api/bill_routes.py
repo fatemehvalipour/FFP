@@ -45,8 +45,6 @@ def add_bill():
     if form.validate_on_submit():
         data = {}
 
-        print('VALIDATED DEADLINE', form.data['deadline'])
-
         bill = Bill(
             owner_id=current_user.get_id(),
             total_amount=form.data['total_amount'],
@@ -96,7 +94,6 @@ def add_bill():
 
         return data
 
-    print('BLANK DEADLINE', form.data['deadline'])
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 
@@ -138,7 +135,6 @@ def editBill(billId):
         bill.total_amount = form.data["total_amount"]
         bill.description = form.data["description"]
         bill.deadline = form.data["deadline"]
-
         db.session.commit()
 
         all_friend_ids = list(map(get_friend_id, friends_list))
