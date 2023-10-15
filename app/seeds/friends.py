@@ -1,6 +1,6 @@
-from app.models import db, Friend
-
+from app.models import db
+from sqlalchemy.sql import text
 
 def undo_friends():
-    db.session.execute('TRUNCATE friends RESTART IDENTITY CASCADE;')
+    db.session.execute(text('TRUNCATE friends RESTART IDENTITY CASCADE;'))
     db.session.commit()

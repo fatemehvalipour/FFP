@@ -21,7 +21,7 @@
 	background-color: transparent;
 	position: absolute;
     top: 15px;
-    left: 20px;
+    right: 20px;
 
 	transition: all 0.2s ease-in-out;
 

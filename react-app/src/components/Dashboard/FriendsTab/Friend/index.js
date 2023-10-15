@@ -3,7 +3,6 @@ import { useState } from "react";
 import { formatToRial } from "../../../../utils/formatToIRR";
 import { Modal } from "../../../../context/Modal";
 import FriendDetails from '../FriendDetailsModal/';
-import DeleteFriendModal from '../DeleteFriendModal';
 
 import User from "../../../../assets/user.png";
 
@@ -28,9 +27,7 @@ const Friend = ({id, friendId, image, username, balance}) => {
 						:  <h3><span className="bold">{username}</span> با شما حسابی ندارد!</h3>)
 					}
 				</div>
-				{parseFloat(balance) === 0 ? (
-					<DeleteFriendModal id={id} onClick={(e) => {e.stopPropagation(); setShowModal(false)}}/>
-					): <p></p>}
+			
 
 
 			</div>

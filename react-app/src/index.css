@@ -147,6 +147,8 @@ div.form-friends-list-container {
 	border-radius: 5px;
 	border: 0.5px solid black;
 	padding-left: 10px;
+	height: 30px;
+	padding: 5px;
 }
 
 .form-label {
@@ -254,5 +256,5 @@ div.form-friends-list-container {
 }
 
 .ltr {
-	direction: ltr;
+	direction: rtl;
 }

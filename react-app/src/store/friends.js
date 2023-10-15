@@ -17,13 +17,6 @@ const createFriend = (friend) => {
     }
 }
 
-const deleteFriend = (id) => {
-    return {
-        type: DELETE_FRIEND,
-        id
-    }
-}
-
 export const getUsersFriends = () => async (dispatch) => {
     const response = await fetch('/api/friends/');
     if (response.ok) {
@@ -57,21 +50,6 @@ export const addFriend = (username) => async (dispatch) => {
         return ['An error occurred. Please try again.'];
     }
 }
-
-export const removeFriend = (id) => async (dispatch) => {
-    const response = await fetch(`/api/friends/${id}`, {
-        method: 'DELETE'
-    });
-
-    if (response.ok) {
-        const data = await response.json();
-        dispatch(deleteFriend(id));
-        if (data.errors) {
-            return data;
-        }
-    }
-}
-
 
 const initialState = { byId: {}, allIds: [] }
 
